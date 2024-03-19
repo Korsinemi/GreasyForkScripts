@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ✅ RoVerify |  Roblox  Verification Badge
 // @namespace    https://github.com/Korsinemi
-// @version      2.5
+// @version      2.5.1
 // @description  A simple script that adds the Roblox verification badge to your name.
 // @icon         https://en.help.roblox.com/hc/article_attachments/7997146649876/Roblox_Verified_Badge.png
 // @supportURL   https://gist.github.com/Korsinemi/fbd0aba2579c62553f14db72a0a1b228
