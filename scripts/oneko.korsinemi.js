@@ -30,7 +30,7 @@
 // @description:fr Un simple script qui met juste un chaton qui suit votre curseur.
 // ==/UserScript==
 
-function loadOneko() {
+(function oneko() {
   const spriteSets = {
     idle: [[-3, -3]], alert: [[-7, -3]], scratchSelf: [[-5, 0], [-6, 0], [-7, 0]],
     scratchWallN: [[0, 0], [0, -1]], scratchWallS: [[-7, -1], [-6, -2]],
@@ -57,7 +57,7 @@ function loadOneko() {
     nekoEl.style.top = `${nekoPosY - 16}px`;
     nekoEl.style.zIndex = Number.MAX_VALUE;
 
-    let nekoFile = "https://raw.githubusercontent.com/Korsinemi/GreasyForkScripts/main/images/oneko.gif"
+    let nekoFile = "./oneko.gif"
     const curScript = document.currentScript
     if (curScript && curScript.dataset.cat) {
       nekoFile = curScript.dataset.cat
@@ -165,12 +165,13 @@ function loadOneko() {
     nekoEl.style.left = `${nekoPosX - 16}px`;
     nekoEl.style.top = `${nekoPosY - 16}px`;
   }
-};
+})();
 
 (function() {
     'use strict';
-    loadOneko.init()
+    oneko.init()
 })();
+
 
 // Oneko.js by Adryd325
 // GreasyFork version by Korsinemi 💜
