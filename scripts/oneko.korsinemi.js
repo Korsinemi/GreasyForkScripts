@@ -1,10 +1,10 @@
 // ==UserScript==
-// @name         🐱 Oneko | El gatito que sigue tu cursor
+// @name         🐱 Oneko | The kitty who follows your cursor
 // @namespace    https://github.com/Korsinemi
-// @version      2.5
+// @version      1.0-beta
 // @description  A simple script for just put a kitty following your cursor.
-// @icon         https://en.help.roblox.com/hc/article_attachments/7997146649876/Roblox_Verified_Badge.png
-// @supportURL   https://gist.github.com/Korsinemi/fbd0aba2579c62553f14db72a0a1b228
+// @icon         https://raw.githubusercontent.com/Korsinemi/GreasyForkScripts/main/images/oneko-logo.png
+// @supportURL   https://github.com/Korsinemi/GreasyForkScripts/issues
 // @author       Korsinemi
 // @match        *://*/*
 // @grant        GM_xmlhttpRequest
