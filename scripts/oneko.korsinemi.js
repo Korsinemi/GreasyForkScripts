@@ -30,13 +30,16 @@
 // @description:fr Un simple script qui met juste un chaton qui suit votre curseur.
 // ==/UserScript==
 
-(function() {
-  fetch('https://raw.githubusercontent.com/adryd325/oneko.js/main/oneko.js')
-    .then(response => response.text())
-    .then(text => eval(text))
-    .catch(error => console.error('Error:', error));
-})();
-
+GM_xmlhttpRequest({
+  method: "GET",
+  url: "https://raw.githubusercontent.com/adryd325/oneko.js/main/oneko.js",
+  onload: function(response) {
+    var script = document.createElement('script');
+    script.textContent = response.responseText;
+    (document.head || document.documentElement).appendChild(script);
+    script.parentNode.removeChild(script);
+  }
+});
 
 // Oneko.js by Adryd325
 // GreasyFork version by Korsinemi 💜
